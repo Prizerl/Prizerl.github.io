@@ -1,0 +1,169 @@
+html {
+	font-family: Pretendard,sans-serif;
+	background-color: #faf9f9;
+	color: #333;
+}
+html.dark {
+	background-color: #1a1a1a;
+	color: #f1f1f1;
+}
+body{
+	margin:0;
+	line-height : inherit;
+}
+.page-wrapper{
+	display: flex;
+	flex-direction : column;
+	min-height : 100vh;
+}
+#btn{
+	background : #007bc3;
+    color: #fff;
+	text-decoration : none;
+    height: 34px;
+    line-height: 31px;
+    padding: 0 9px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.navbar{
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	padding: 15px 0;
+	position: relative;
+}
+.ulbar {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+.mr-1{
+	margin-right : 0.25rem;
+}
+img {
+	max-width : 100%;
+	height : auto;
+	display : block;
+	vertical-align : middle;
+}
+.items-center{
+	align-items : center;
+}
+.flex {
+	display : flex;
+}
+.def{
+	margin-right: 15px;
+	color: #fff;
+	text-decoration: none;
+	padding: 15 16px;
+	font-size: 24px;
+}
+.nav-item {
+	margin-right : 15px;
+}
+.mb-20{
+	margin-bottom:5rem;
+}
+.dark-mode-toggle.def {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+}
+li{
+	margin-left: 5px;
+}
+a:hover{
+	background-color: #555;
+}
+.main{
+	border: 2px solid rgb(127 127 127);
+	text-align : center;
+	margin : 100px 100px;
+	padding : 60px 60px 90px;
+}
+.side{
+	padding : 0px 60px;
+}
+.result_num{
+	font-size : 3rem;
+	margin-bottom : 10px;
+}
+strong{
+	font-weight : 500;
+	color : #d43301;
+}
+.desc{
+	margin-top : 9px;
+}
+.ball_645.lrg {
+	width: 60px;
+	height: 60px;
+	line-height: 56px;
+	font-size: 28px;
+}
+.ball_645 {
+	display: inline-block;
+	border-radius: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 500;
+	background-color : red;
+	/* text-shadow: 0px 0px 2px rgba(0, 0, 0, 1); */
+}
+.red{
+	background-color : red;
+}
+.orange{
+	background-color : orange;
+}
+.yellow{
+	background-color : #ffff00bd;
+}
+.green{
+	background-color : green;
+}
+.blue{
+	background-color : blue;
+}
+.purple{
+	background-color : purple;
+}	
+.pink{
+	background-color : pink;
+}
+
+.nums {
+	display: inline-block;
+	margin-top: 26px;
+}
+.num{
+	float:left;
+	position: relative;
+	padding : 10px;
+}
+.border_radius{
+	padding : 20px;
+	border: 2px solid rgb(127 127 127);
+	border-radius : 10px;
+}
+.station{
+	display:flex;
+	position :relative;
+}
+.correct{
+	margin-left : 40px;
+	font-size: 28px;
+}

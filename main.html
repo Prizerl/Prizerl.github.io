@@ -1,0 +1,271 @@
+<html lang="en" class="dark">
+	<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="img.jpg">
+	<link rel="stylesheet" type"text/css" href="style.css">
+	</head>
+	
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+			<div class="page-wrapper">
+				<nav class="navbar">
+					<ul class="ulbar">
+						<li class="nav-home">
+							<a class="flex items-center def">
+								<img src="img.jpg" alt="icon" width="50" height="50" class="mr-1"> 
+								예측기
+							</a>
+						<li>
+						<li class="nav-item def">
+							<a href="main.html" class="def">
+								이번주
+							</a>
+						</li>
+						<li class="nav-item def">
+							<span class="def">
+								역대 내역
+							</span>
+							<select id="list" title="회차 선택">
+								<option value="1095">1095</option>
+								<option value="1094">1094</option>
+								<option value="1093">1093</option>
+								<option value="1092">1092</option>
+							</select>
+							<a id="btn" href="javascript:void_main(0)">조회</a>
+						</li>
+					</ul>
+					<button id="toggle" onclick="toggle()" class="dark-mode-toggle def">🌞</button>
+				</nav>
+				
+				<div style="display: flex;">
+					<div class="main side">
+						<h4 id="prediction" class="result_num"> 1095회 예측 결과 [맞춘 수]</h4>
+						<div class="station">	
+							<p class = "border_radius">
+								<span id = "ball0_0" class="ball_645 lrg "></span>
+								<span id = "ball0_1" class="ball_645 lrg "></span>
+								<span id = "ball0_2" class="ball_645 lrg "></span>
+								<span id = "ball0_3" class="ball_645 lrg "></span>
+								<span id = "ball0_4" class="ball_645 lrg "></span>
+								<span id = "ball0_5" class="ball_645 lrg "></span>
+								<p id = "ball0_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball1_0" class="ball_645 lrg "></span>
+								<span id = "ball1_1" class="ball_645 lrg "></span>
+								<span id = "ball1_2" class="ball_645 lrg "></span>
+								<span id = "ball1_3" class="ball_645 lrg "></span>
+								<span id = "ball1_4" class="ball_645 lrg "></span>
+								<span id = "ball1_5" class="ball_645 lrg "></span>
+								<p id = "ball1_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball2_0" class="ball_645 lrg "></span>
+								<span id = "ball2_1" class="ball_645 lrg "></span>
+								<span id = "ball2_2" class="ball_645 lrg "></span>
+								<span id = "ball2_3" class="ball_645 lrg "></span>
+								<span id = "ball2_4" class="ball_645 lrg "></span>
+								<span id = "ball2_5" class="ball_645 lrg "></span>
+								<p id = "ball2_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball3_0" class="ball_645 lrg "></span>
+								<span id = "ball3_1" class="ball_645 lrg "></span>
+								<span id = "ball3_2" class="ball_645 lrg "></span>
+								<span id = "ball3_3" class="ball_645 lrg "></span>
+								<span id = "ball3_4" class="ball_645 lrg "></span>
+								<span id = "ball3_5" class="ball_645 lrg "></span>
+								<p id = "ball3_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball4_0" class="ball_645 lrg "></span>
+								<span id = "ball4_1" class="ball_645 lrg "></span>
+								<span id = "ball4_2" class="ball_645 lrg "></span>
+								<span id = "ball4_3" class="ball_645 lrg "></span>
+								<span id = "ball4_4" class="ball_645 lrg "></span>
+								<span id = "ball4_5" class="ball_645 lrg "></span>
+								<p id = "ball4_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball5_0" class="ball_645 lrg "></span>
+								<span id = "ball5_1" class="ball_645 lrg "></span>
+								<span id = "ball5_2" class="ball_645 lrg "></span>
+								<span id = "ball5_3" class="ball_645 lrg "></span>
+								<span id = "ball5_4" class="ball_645 lrg "></span>
+								<span id = "ball5_5" class="ball_645 lrg "></span>
+								<p id = "ball5_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball6_0" class="ball_645 lrg "></span>
+								<span id = "ball6_1" class="ball_645 lrg "></span>
+								<span id = "ball6_2" class="ball_645 lrg "></span>
+								<span id = "ball6_3" class="ball_645 lrg "></span>
+								<span id = "ball6_4" class="ball_645 lrg "></span>
+								<span id = "ball6_5" class="ball_645 lrg "></span>
+								<p id = "ball6_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball7_0" class="ball_645 lrg "></span>
+								<span id = "ball7_1" class="ball_645 lrg "></span>
+								<span id = "ball7_2" class="ball_645 lrg "></span>
+								<span id = "ball7_3" class="ball_645 lrg "></span>
+								<span id = "ball7_4" class="ball_645 lrg "></span>
+								<span id = "ball7_5" class="ball_645 lrg "></span>
+								<p id = "ball7_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball8_0" class="ball_645 lrg "></span>
+								<span id = "ball8_1" class="ball_645 lrg "></span>
+								<span id = "ball8_2" class="ball_645 lrg "></span>
+								<span id = "ball8_3" class="ball_645 lrg "></span>
+								<span id = "ball8_4" class="ball_645 lrg "></span>
+								<span id = "ball8_5" class="ball_645 lrg "></span>
+								<p id = "ball8_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						<div class="station">
+							<p class = "border_radius">
+								<span id = "ball9_0" class="ball_645 lrg "></span>
+								<span id = "ball9_1" class="ball_645 lrg "></span>
+								<span id = "ball9_2" class="ball_645 lrg "></span>
+								<span id = "ball9_3" class="ball_645 lrg "></span>
+								<span id = "ball9_4" class="ball_645 lrg "></span>
+								<span id = "ball9_5" class="ball_645 lrg "></span>
+								<p id = "ball9_6" class="border_radius correct"></p>
+							</p>
+						</div>
+						
+					</div>
+					<div class="main">
+						<h4 id="result" class="result_num">
+							<strong> 1095회 </strong> 당첨결과
+						</h4>
+						<!--
+						<p class="desc">(2023년 11월 18일 추첨)</p>
+						-->
+						<div class="nums">
+							<div class="num win">
+								<strong>당첨번호</strong>
+								<p class = "border_radius">
+									<span id = "ball0" class="ball_645 lrg "></span>
+									<span id = "ball1" class="ball_645 lrg "></span>
+									<span id = "ball2" class="ball_645 lrg "></span>
+									<span id = "ball3" class="ball_645 lrg "></span>
+									<span id = "ball4" class="ball_645 lrg "></span>
+									<span id = "ball5" class="ball_645 lrg "></span>
+								</p>
+							</div>
+							<div class="num bonus">
+								<strong>보너스</strong>
+								<p class="border_radius"><span id = "ball6" class="ball_645 lrg "></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	var result_array = [
+	[],
+	[8, 14, 28, 29, 34, 40, 12],
+	[6, 7, 15, 22, 26, 40, 41],
+	[10, 17, 22, 30, 35, 43, 44],
+	[7, 18, 19, 26, 33, 45, 37]
+	];
+	var prediction_array = [
+	[[5, 8, 17, 19, 22, 36], [5, 8, 15, 22, 36, 37], [3, 8, 19, 22, 36, 39], [5, 8, 15, 19, 22, 36], [5, 14, 22, 25, 36, 42], [3, 5, 8, 21, 36, 43], [3, 5, 8, 19, 22, 36], [3, 8, 11, 21, 22, 36], [5, 8, 21, 22, 36, 45], [5, 8, 19, 21, 22, 36]],
+	[[1, 17, 27, 28, 32, 43], [6, 15, 17, 27, 28, 32], [17, 27, 28, 32, 36, 43], [6, 9, 17, 27, 30, 32], [6, 14, 17, 27, 28, 45], [13, 17, 27, 28, 32, 37], [17, 21, 27, 28, 32, 41], [6, 8, 17, 23, 27, 28], [6, 11, 15, 17, 28, 32], [6, 11, 27, 28, 32, 34]],
+	[[13, 19, 20, 21, 26, 36], [7, 12, 13, 19, 33, 36], [19, 21, 22, 23, 36, 42], [7, 19, 21, 22, 23, 42], [21, 33, 36, 39, 42, 45], [7, 13, 23, 33, 36, 45], [3, 13, 19, 21, 33, 36], [7, 22, 23, 33, 42, 45], [5, 7, 13, 21, 36, 45], [19, 21, 23, 36, 39, 45]],
+	[[1, 2, 19, 26, 33, 45], [2, 3, 19, 26, 33, 36], [1, 2, 7, 26, 37, 45], [3, 19, 26, 33, 37, 45], [1, 2, 3, 19, 26, 37], [1, 2, 3, 26, 33, 37], [1, 3, 19, 26, 3, 40], [2, 16, 19, 37, 39, 45], [1, 2, 16, 19, 26, 33], [2, 3, 37, 41, 42, 45]],
+	[[7, 20, 23, 28, 30, 33], [7, 16, 20, 24, 30, 44], [10, 12, 15, 20, 28, 30], [6, 20, 23, 24, 30, 33], [7, 10, 20, 23, 30, 33], [6, 10, 20, 30, 33, 41], [7, 16, 20, 30, 33, 36], [1, 11, 20, 30, 33, 41], [20, 21, 23, 30, 32, 33], [9, 12, 20, 23, 33, 41]]
+	]
+	max = 1096;
+	
+	void_main(max);
+	
+	function void_main(p){
+		var index = document.getElementById("list").options[document.getElementById("list").selectedIndex].text;
+		var n = document.getElementById("list").selectedIndex+1;
+		if(p == max){
+			index = max;
+			n = 0;
+		}
+		insert_result(n);
+		insert_prediction(n);
+		document.getElementById("prediction").innerHTML = index + "회 예측 결과, [맞춘 수]"
+		document.getElementById("result").outerHTML = "<h4 id='result' class='result_num'> <strong>" +index + "회 </strong> 당첨결과</h4>"
+	}
+	function insert_prediction(n){
+		for(a = 0; a < 10; a++){
+			var r_a = result_array[n].slice(0,6);
+			document.getElementById("ball"+a+"_6").innerHTML = prediction_array[n][a].filter(it => r_a.includes(it)).length
+			
+			for(b = 0; b < 6; b++){
+				var idx = document.getElementById("ball"+a+"_"+b)
+				idx.innerHTML = prediction_array[n][a][b]
+				if(prediction_array[n][a][b] <=10){
+					idx.style.backgroundColor = "#fbc400"
+				}else if(prediction_array[n][a][b] <=20){
+					idx.style.backgroundColor = "#69c8f2"
+				}else if(prediction_array[n][a][b] <=30){
+					idx.style.backgroundColor = "#ff7272"
+				}else if(prediction_array[n][a][b] <=40){
+					idx.style.backgroundColor = "#aaa"
+				}else if(prediction_array[n][a][b] <=45){
+					idx.style.backgroundColor = "#b0d840"
+				}
+			}
+		}
+	}
+	
+	
+	function insert_result(n){
+		for(i = 0; i < 7; i++){
+			var idx = document.getElementById("ball"+i)
+			idx.innerHTML = result_array[n][i]
+			if(result_array[n] == ""){
+				idx.innerHTML = "?"
+			}
+			if(result_array[n][i] <=10){
+				idx.style.backgroundColor = "#fbc400"
+			}else if(result_array[n][i] <=20){
+				idx.style.backgroundColor = "#69c8f2"
+			}else if(result_array[n][i] <=30){
+				idx.style.backgroundColor = "#ff7272"
+			}else if(result_array[n][i] <=40){
+				idx.style.backgroundColor = "#aaa"
+			}else if(result_array[n][i] <=45){
+				idx.style.backgroundColor = "#b0d840"
+			}
+		}
+	}
+	
+	
+	function toggle(){
+		if(document.documentElement.classList.contains('dark')){
+			document.documentElement.classList.remove("dark");
+			document.getElementById("toggle").innerHTML = "🌙";
+		}else{
+			document.documentElement.classList.add("dark");
+			document.getElementById("toggle").innerHTML = "🌞";
+		}
+	}
+	</script>
+</html>

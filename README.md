@@ -1,1 +1,1 @@
-# Prizerl.github.io
+# Prizerl.github

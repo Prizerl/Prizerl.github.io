@@ -1,2 +1,2 @@
 # Prizerl.github.io
-# main
+# lotto
